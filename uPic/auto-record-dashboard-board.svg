@@ -1,0 +1,100 @@
+<svg width="1600" height="1120" viewBox="0 0 1600 1120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="180" y1="80" x2="1420" y2="1060" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3F9FF"/>
+      <stop offset="0.55" stop-color="#E6F4FF"/>
+      <stop offset="1" stop-color="#DCF0FF"/>
+    </linearGradient>
+    <linearGradient id="centerCard" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1D74F5"/>
+      <stop offset="1" stop-color="#22B8D0"/>
+    </linearGradient>
+    <linearGradient id="moduleCard" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#F2FAFF" stop-opacity="0.98"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#4B9FD6" flood-opacity="0.16"/>
+    </filter>
+    <marker id="arrow" markerWidth="16" markerHeight="16" refX="10" refY="8" orient="auto">
+      <path d="M2 2L12 8L2 14V2Z" fill="#71AEDD"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="1120" rx="36" fill="url(#bg)"/>
+  <circle cx="1290" cy="160" r="190" fill="#D7F1FF" fill-opacity="0.72"/>
+  <circle cx="230" cy="980" r="250" fill="#E8F7FF" fill-opacity="0.84"/>
+  <path d="M0 210C220 120 390 126 560 182C758 248 930 236 1128 170C1280 120 1410 116 1600 178V0H0V210Z" fill="#FFFFFF" fill-opacity="0.46"/>
+
+  <text x="112" y="108" font-size="42" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="700" fill="#164A78">监控模块总览</text>
+  <text x="112" y="148" font-size="20" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#5A7D99">围绕大促值班、峰值复盘和容量评估，统一整理需要持续记录的监控数据</text>
+
+  <path d="M800 420L470 280" stroke="#71AEDD" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M800 420L1120 280" stroke="#71AEDD" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M800 420L440 760" stroke="#71AEDD" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M800 420L1160 760" stroke="#71AEDD" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M800 420L800 920" stroke="#71AEDD" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="614" y="330" width="372" height="180" rx="34" fill="url(#centerCard)"/>
+  </g>
+  <text x="800" y="402" text-anchor="middle" font-size="34" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="700" fill="#FFFFFF">大促监控数据记录</text>
+  <text x="800" y="446" text-anchor="middle" font-size="21" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#E8F7FF">记录流量、资源、链路和异常状态</text>
+  <text x="800" y="484" text-anchor="middle" font-size="21" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#E8F7FF">支撑实时判断与大促复盘</text>
+
+  <g filter="url(#shadow)">
+    <rect x="112" y="168" width="462" height="196" rx="28" fill="url(#moduleCard)"/>
+  </g>
+  <rect x="144" y="198" width="130" height="36" rx="18" fill="#EAF6FF"/>
+  <text x="209" y="222" text-anchor="middle" font-size="17" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="600" fill="#2171E6">入口流量</text>
+  <text x="144" y="274" font-size="30" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="700" fill="#174B79">接入层-入口流量</text>
+  <circle cx="158" cy="316" r="5" fill="#22A6D5"/>
+  <text x="178" y="322" font-size="21" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#466985">QPS / QPM / 峰值时间</text>
+  <circle cx="158" cy="352" r="5" fill="#22A6D5"/>
+  <text x="178" y="358" font-size="21" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#466985">handled 域名与自定义域名流量趋势</text>
+
+  <g filter="url(#shadow)">
+    <rect x="1026" y="168" width="462" height="196" rx="28" fill="url(#moduleCard)"/>
+  </g>
+  <rect x="1058" y="198" width="130" height="36" rx="18" fill="#EAF6FF"/>
+  <text x="1123" y="222" text-anchor="middle" font-size="17" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="600" fill="#2171E6">区域流量</text>
+  <text x="1058" y="274" font-size="30" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="700" fill="#174B79">核心应用流量</text>
+  <circle cx="1072" cy="316" r="5" fill="#22A6D5"/>
+  <text x="1092" y="322" font-size="21" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#466985">美国区域</text>
+  <circle cx="1072" cy="352" r="5" fill="#22A6D5"/>
+  <text x="1092" y="358" font-size="21" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#466985">新加坡区域</text>
+
+  <g filter="url(#shadow)">
+    <rect x="88" y="700" width="516" height="278" rx="28" fill="url(#moduleCard)"/>
+  </g>
+  <rect x="120" y="730" width="156" height="36" rx="18" fill="#EAF6FF"/>
+  <text x="198" y="754" text-anchor="middle" font-size="17" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="600" fill="#2171E6">资源水位</text>
+  <text x="120" y="806" font-size="30" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="700" fill="#174B79">核心应用 CPU / 内存</text>
+  <circle cx="134" cy="850" r="5" fill="#22A6D5"/>
+  <text x="154" y="856" font-size="21" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#466985">CPU 使用率峰值</text>
+  <circle cx="134" cy="898" r="5" fill="#22A6D5"/>
+  <text x="154" y="904" font-size="21" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#466985">内存使用率峰值</text>
+  <circle cx="134" cy="946" r="5" fill="#22A6D5"/>
+  <text x="154" y="952" font-size="21" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#466985">Pod 数 / 重启 / OOM</text>
+
+  <g filter="url(#shadow)">
+    <rect x="996" y="700" width="516" height="278" rx="28" fill="url(#moduleCard)"/>
+  </g>
+  <rect x="1028" y="730" width="172" height="36" rx="18" fill="#EAF6FF"/>
+  <text x="1114" y="754" text-anchor="middle" font-size="17" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="600" fill="#2171E6">链路数量</text>
+  <text x="1028" y="806" font-size="30" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="700" fill="#174B79">下单链路数量统计</text>
+  <circle cx="1042" cy="850" r="5" fill="#22A6D5"/>
+  <text x="1062" y="856" font-size="21" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#466985">加购</text>
+  <circle cx="1042" cy="898" r="5" fill="#22A6D5"/>
+  <text x="1062" y="904" font-size="21" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#466985">保存弃单</text>
+  <circle cx="1042" cy="946" r="5" fill="#22A6D5"/>
+  <text x="1062" y="952" font-size="21" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#466985">创单</text>
+
+  <g filter="url(#shadow)">
+    <rect x="580" y="884" width="440" height="160" rx="28" fill="url(#moduleCard)"/>
+  </g>
+  <rect x="612" y="914" width="156" height="36" rx="18" fill="#EAF6FF"/>
+  <text x="690" y="938" text-anchor="middle" font-size="17" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="600" fill="#2171E6">核心系统</text>
+  <text x="612" y="990" font-size="30" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="700" fill="#174B79">架构核心系统</text>
+  <text x="612" y="1026" font-size="21" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#466985">核心系统看板与 APM 指标记录</text>
+</svg>
