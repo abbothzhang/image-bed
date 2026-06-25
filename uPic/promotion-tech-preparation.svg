@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="940" viewBox="0 0 1280 940" role="img" aria-labelledby="title desc">
+  <title id="title">技术准备与优化保障架构图</title>
+  <desc id="desc">围绕大促核心业务系统，展示容量压测、架构优化、缓存优化、封网策略、监控告警、运维保障与预案演练如何协同支撑稳定性。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f9fb"/>
+      <stop offset=".5" stop-color="#eef5ef"/>
+      <stop offset="1" stop-color="#f8f2e7"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#173b61"/>
+      <stop offset="1" stop-color="#0f756d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#14334a" flood-opacity=".14"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#537180"/>
+    </marker>
+    <style>
+      text { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; }
+      .tag { fill: #2f5966; font-size: 15px; font-weight: 800; letter-spacing: 1px; }
+      .title { fill: #132f43; font-size: 36px; font-weight: 900; }
+      .sub { fill: #60798b; font-size: 18px; }
+      .nodeTitle { fill: #17364c; font-size: 24px; font-weight: 900; }
+      .nodeSub { fill: #617889; font-size: 17px; font-weight: 700; }
+      .coreTitle { fill: #fff; font-size: 34px; font-weight: 900; }
+      .coreSub { fill: rgba(255,255,255,.9); font-size: 19px; font-weight: 700; }
+      .resultTitle { fill: #fff; font-size: 18px; font-weight: 800; }
+      .resultSub { fill: rgba(255,255,255,.88); font-size: 14px; font-weight: 700; }
+      .line { fill: none; stroke: #537180; stroke-width: 3; stroke-linecap: round; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1280" height="940" rx="36" fill="url(#bg)"/>
+  <circle cx="1085" cy="120" r="150" fill="#d8eadf" opacity=".5"/>
+  <circle cx="148" cy="792" r="200" fill="#d9e8f4" opacity=".54"/>
+
+  <text x="72" y="78" class="tag">TECH PREPARATION AND OPTIMIZATION</text>
+  <text x="72" y="124" class="title">技术准备与优化保障架构图</text>
+  <text x="72" y="156" class="sub">七类保障动作围绕核心业务系统协同，支撑高峰期的稳定性、弹性、可观测与可回滚能力</text>
+
+  <g transform="translate(440 318)">
+    <rect width="400" height="210" rx="34" fill="url(#core)" filter="url(#shadow)"/>
+    <text x="200" y="88" text-anchor="middle" class="coreTitle">大促核心业务系统</text>
+    <text x="200" y="128" text-anchor="middle" class="coreSub">核心链路、交易服务、库存履约、活动编排</text>
+    <rect x="60" y="150" width="104" height="30" rx="15" fill="#ffffff" opacity=".16"/>
+    <rect x="178" y="150" width="104" height="30" rx="15" fill="#ffffff" opacity=".16"/>
+    <rect x="296" y="150" width="44" height="30" rx="15" fill="#ffffff" opacity=".16"/>
+    <text x="112" y="171" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">稳定运行</text>
+    <text x="230" y="171" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">流量承载</text>
+    <text x="318" y="171" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">兜底</text>
+  </g>
+
+  <g transform="translate(436 204)">
+    <rect width="408" height="92" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+    <text x="204" y="42" text-anchor="middle" class="nodeTitle">容量规划与压测</text>
+    <text x="204" y="72" text-anchor="middle" class="nodeSub">基于历史与预测，按去年峰值 3 倍验证链路容量</text>
+  </g>
+
+  <g transform="translate(84 248)">
+    <rect width="268" height="122" rx="26" fill="#ffffff" filter="url(#shadow)"/>
+    <text x="134" y="46" text-anchor="middle" class="nodeTitle">架构优化</text>
+    <text x="134" y="76" text-anchor="middle" class="nodeSub">读写分离、削峰填谷</text>
+    <text x="134" y="102" text-anchor="middle" class="nodeSub">限流降级、熔断隔离</text>
+  </g>
+
+  <g transform="translate(84 518)">
+    <rect width="268" height="122" rx="26" fill="#ffffff" filter="url(#shadow)"/>
+    <text x="134" y="46" text-anchor="middle" class="nodeTitle">缓存优化</text>
+    <text x="134" y="76" text-anchor="middle" class="nodeSub">热点数据提前缓存</text>
+    <text x="134" y="102" text-anchor="middle" class="nodeSub">降低数据库与核心服务压力</text>
+  </g>
+
+  <g transform="translate(928 248)">
+    <rect width="268" height="122" rx="26" fill="#ffffff" filter="url(#shadow)"/>
+    <text x="134" y="46" text-anchor="middle" class="nodeTitle">封网策略</text>
+    <text x="134" y="76" text-anchor="middle" class="nodeSub">核心大促日封网</text>
+    <text x="134" y="102" text-anchor="middle" class="nodeSub">非核心日下班时间封网</text>
+  </g>
+
+  <g transform="translate(928 518)">
+    <rect width="268" height="122" rx="26" fill="#ffffff" filter="url(#shadow)"/>
+    <text x="134" y="46" text-anchor="middle" class="nodeTitle">监控与告警</text>
+    <text x="134" y="76" text-anchor="middle" class="nodeSub">指标、日志、链路追踪</text>
+    <text x="134" y="102" text-anchor="middle" class="nodeSub">业务监控与监控大盘</text>
+  </g>
+
+  <g transform="translate(236 718)">
+    <rect width="320" height="118" rx="28" fill="#ffffff" filter="url(#shadow)"/>
+    <text x="160" y="46" text-anchor="middle" class="nodeTitle">运维保障</text>
+    <text x="160" y="76" text-anchor="middle" class="nodeSub">预留云资源与中间件冗余</text>
+    <text x="160" y="102" text-anchor="middle" class="nodeSub">确认所有服务开启 HPA</text>
+  </g>
+
+  <g transform="translate(724 718)">
+    <rect width="320" height="118" rx="28" fill="#ffffff" filter="url(#shadow)"/>
+    <text x="160" y="46" text-anchor="middle" class="nodeTitle">预案与演练</text>
+    <text x="160" y="76" text-anchor="middle" class="nodeSub">应急预案、故障演练</text>
+    <text x="160" y="102" text-anchor="middle" class="nodeSub">值班人员熟悉新版 CICD 回滚</text>
+  </g>
+
+  <path class="line" d="M640 296 V318"/>
+  <path class="line" d="M352 309 C394 309, 420 340, 440 372"/>
+  <path class="line" d="M352 579 C404 579, 425 520, 440 478"/>
+  <path class="line" d="M928 309 C886 309, 860 340, 840 372"/>
+  <path class="line" d="M928 579 C876 579, 855 520, 840 478"/>
+  <path class="line" d="M556 718 C556 650, 566 582, 584 528"/>
+  <path class="line" d="M724 718 C724 650, 714 582, 696 528"/>
+
+  <g transform="translate(320 864)">
+    <rect width="148" height="52" rx="18" fill="#234f69" filter="url(#shadow)"/>
+    <text x="74" y="23" text-anchor="middle" class="resultTitle">稳定性</text>
+    <text x="74" y="40" text-anchor="middle" class="resultSub">高峰可用</text>
+  </g>
+  <g transform="translate(490 864)">
+    <rect width="148" height="52" rx="18" fill="#1d6f6a" filter="url(#shadow)"/>
+    <text x="74" y="23" text-anchor="middle" class="resultTitle">弹性</text>
+    <text x="74" y="40" text-anchor="middle" class="resultSub">快速扩缩容</text>
+  </g>
+  <g transform="translate(660 864)">
+    <rect width="148" height="52" rx="18" fill="#876027" filter="url(#shadow)"/>
+    <text x="74" y="23" text-anchor="middle" class="resultTitle">可观测</text>
+    <text x="74" y="40" text-anchor="middle" class="resultSub">问题快速定位</text>
+  </g>
+  <g transform="translate(830 864)">
+    <rect width="148" height="52" rx="18" fill="#5d4e7d" filter="url(#shadow)"/>
+    <text x="74" y="23" text-anchor="middle" class="resultTitle">可回滚</text>
+    <text x="74" y="40" text-anchor="middle" class="resultSub">最小变更止损</text>
+  </g>
+
+</svg>
