@@ -1,0 +1,135 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="160" y1="80" x2="1440" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEF7FF"/>
+      <stop offset="0.55" stop-color="#E2F2FF"/>
+      <stop offset="1" stop-color="#D5EEFF"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#DFF3FF" stop-opacity="0.88"/>
+    </linearGradient>
+    <linearGradient id="accentBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1D74F5"/>
+      <stop offset="1" stop-color="#1CC8D7"/>
+    </linearGradient>
+    <linearGradient id="accentOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FF9B4A"/>
+      <stop offset="1" stop-color="#FF5E57"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#56A7D8" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="40" fill="url(#bg)"/>
+  <circle cx="1250" cy="120" r="180" fill="#B7ECFF" fill-opacity="0.55"/>
+  <circle cx="260" cy="760" r="240" fill="#D8F4FF" fill-opacity="0.7"/>
+  <path d="M0 180C180 120 300 120 470 180C650 244 760 248 930 196C1120 138 1300 116 1600 196V0H0V180Z" fill="#FFFFFF" fill-opacity="0.38"/>
+
+  <g opacity="0.22" stroke="#7FC8F2" stroke-width="1">
+    <path d="M80 220H1520"/>
+    <path d="M80 320H1520"/>
+    <path d="M80 420H1520"/>
+    <path d="M80 520H1520"/>
+    <path d="M80 620H1520"/>
+    <path d="M80 720H1520"/>
+    <path d="M220 120V800"/>
+    <path d="M420 120V800"/>
+    <path d="M620 120V800"/>
+    <path d="M820 120V800"/>
+    <path d="M1020 120V800"/>
+    <path d="M1220 120V800"/>
+    <path d="M1420 120V800"/>
+  </g>
+
+  <text x="800" y="110" text-anchor="middle" font-size="42" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700" fill="#114A79">自动化记录流程</text>
+  <text x="800" y="152" text-anchor="middle" font-size="20" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#4B7EA6">面向大促监控的数据采集、计算、识别与输出闭环</text>
+
+  <g filter="url(#shadow)">
+    <rect x="84" y="250" width="250" height="360" rx="30" fill="url(#card)"/>
+    <rect x="384" y="250" width="250" height="360" rx="30" fill="url(#card)"/>
+    <rect x="684" y="250" width="250" height="360" rx="30" fill="url(#card)"/>
+    <rect x="984" y="250" width="250" height="360" rx="30" fill="url(#card)"/>
+    <rect x="1284" y="250" width="250" height="360" rx="30" fill="url(#card)"/>
+  </g>
+
+  <g stroke="url(#accentBlue)" stroke-width="8" stroke-linecap="round">
+    <path d="M342 430H376"/>
+    <path d="M642 430H676"/>
+    <path d="M942 430H976"/>
+    <path d="M1242 430H1276"/>
+  </g>
+  <g fill="url(#accentBlue)">
+    <path d="M370 430L352 418V442L370 430Z"/>
+    <path d="M670 430L652 418V442L670 430Z"/>
+    <path d="M970 430L952 418V442L970 430Z"/>
+    <path d="M1270 430L1252 418V442L1270 430Z"/>
+  </g>
+
+  <g>
+    <circle cx="209" cy="325" r="44" fill="#E7F5FF"/>
+    <rect x="175" y="305" width="68" height="40" rx="12" fill="url(#accentBlue)"/>
+    <path d="M190 318H228" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <path d="M190 332H214" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <path d="M238 356C238 367.046 229.046 376 218 376H200C188.954 376 180 367.046 180 356" stroke="#69BDF1" stroke-width="5"/>
+    <text x="209" y="410" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700" fill="#184E7A">数据源</text>
+    <text x="209" y="460" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">流量日志</text>
+    <text x="209" y="494" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">应用看板</text>
+    <text x="209" y="528" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">APM 指标</text>
+  </g>
+
+  <g>
+    <circle cx="509" cy="325" r="44" fill="#E7F5FF"/>
+    <rect x="476" y="304" width="66" height="42" rx="12" fill="url(#accentBlue)"/>
+    <path d="M491 325H528" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <path d="M509 312V338" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="493" cy="358" r="8" fill="#77DCE3"/>
+    <circle cx="525" cy="358" r="8" fill="#77DCE3"/>
+    <path d="M493 358H525" stroke="#77DCE3" stroke-width="4"/>
+    <text x="509" y="410" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700" fill="#184E7A">自动采集</text>
+    <text x="509" y="460" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">定时拉取</text>
+    <text x="509" y="494" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">多源汇聚</text>
+    <text x="509" y="528" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">截图留档</text>
+  </g>
+
+  <g>
+    <circle cx="809" cy="325" r="44" fill="#E7F5FF"/>
+    <rect x="772" y="298" width="74" height="54" rx="14" fill="url(#accentBlue)"/>
+    <path d="M789 336L801 323L811 334L829 314" stroke="white" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M788 346H830" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <text x="809" y="410" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700" fill="#184E7A">计算加工</text>
+    <text x="809" y="460" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">峰值提取</text>
+    <text x="809" y="494" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">时间定位</text>
+    <text x="809" y="528" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">区域聚合</text>
+  </g>
+
+  <g>
+    <circle cx="1109" cy="325" r="44" fill="#FFF2E8"/>
+    <path d="M1109 294L1144 352H1074L1109 294Z" fill="url(#accentOrange)"/>
+    <circle cx="1109" cy="340" r="4.5" fill="white"/>
+    <path d="M1109 317V333" stroke="white" stroke-width="5" stroke-linecap="round"/>
+    <text x="1109" y="410" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700" fill="#184E7A">异常识别</text>
+    <text x="1109" y="460" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">峰值异常</text>
+    <text x="1109" y="494" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">资源告警</text>
+    <text x="1109" y="528" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">链路波动</text>
+  </g>
+
+  <g>
+    <circle cx="1409" cy="325" r="44" fill="#E7F5FF"/>
+    <rect x="1371" y="296" width="76" height="58" rx="14" fill="url(#accentBlue)"/>
+    <rect x="1383" y="308" width="22" height="34" rx="6" fill="white"/>
+    <rect x="1411" y="316" width="8" height="26" rx="4" fill="white"/>
+    <rect x="1424" y="324" width="8" height="18" rx="4" fill="white"/>
+    <text x="1409" y="410" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700" fill="#184E7A">看板输出</text>
+    <text x="1409" y="460" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">指标汇总</text>
+    <text x="1409" y="494" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">趋势展示</text>
+    <text x="1409" y="528" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">复盘沉淀</text>
+  </g>
+
+  <g opacity="0.95">
+    <rect x="168" y="662" width="1264" height="112" rx="26" fill="#FFFFFF" fill-opacity="0.52"/>
+    <text x="800" y="710" text-anchor="middle" font-size="24" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="600" fill="#2C678E">统一沉淀流量、资源、链路和异常数据，减少人工截图与手工整理成本</text>
+    <text x="800" y="748" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#5A7E9C">支持值班判断、峰值复盘、扩容依据和阈值优化</text>
+  </g>
+</svg>
