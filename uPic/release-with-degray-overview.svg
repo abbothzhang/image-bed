@@ -1,0 +1,130 @@
+<svg width="1440" height="1320" viewBox="0 0 1440 1320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="60" x2="1320" y2="1260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EEF4FA"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="grayCard" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#EDE9FE"/>
+      <stop offset="1" stop-color="#DDD6FE"/>
+    </linearGradient>
+    <linearGradient id="mixCard" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F3F0FF"/>
+      <stop offset="1" stop-color="#E8E2FF"/>
+    </linearGradient>
+    <linearGradient id="normalCard" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEF4FB"/>
+    </linearGradient>
+    <linearGradient id="doneCard" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ECFDF5"/>
+      <stop offset="1" stop-color="#DBF7E8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7V0Z" fill="#64748B"/>
+    </marker>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#DCE5EF" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1440" height="1320" rx="36" fill="url(#bg)"/>
+  <rect x="32" y="32" width="1376" height="1256" rx="28" fill="url(#grid)" opacity="0.5"/>
+
+  <text x="720" y="96" text-anchor="middle" fill="#0F172A" font-size="38" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">有去标：灰色泳道可持续复用</text>
+  <text x="720" y="138" text-anchor="middle" fill="#475569" font-size="20" font-weight="500" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">每轮发布后把灰度版本提升为正常版本，下一轮继续使用同一条灰色泳道</text>
+
+  <g>
+    <rect x="72" y="186" width="1296" height="328" rx="28" fill="url(#panel)" stroke="#D6DFEA" stroke-width="2" filter="url(#shadow)"/>
+    <text x="110" y="234" fill="#0F172A" font-size="28" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">第一轮：A、B 一起灰度发布</text>
+    <text x="122" y="278" fill="#64748B" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">灰度部署</text>
+    <text x="438" y="278" fill="#64748B" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">逐步切流</text>
+    <text x="754" y="278" fill="#64748B" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">全量灰度</text>
+    <text x="1070" y="278" fill="#64748B" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">去标上线</text>
+
+    <rect x="110" y="304" width="220" height="182" rx="24" fill="url(#normalCard)" stroke="#C7D5E6" stroke-width="2"/>
+    <text x="220" y="352" text-anchor="middle" fill="#1E293B" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(正常)</text>
+    <text x="220" y="392" text-anchor="middle" fill="#6D28D9" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(灰色)</text>
+    <text x="220" y="432" text-anchor="middle" fill="#1E293B" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(正常)</text>
+    <text x="220" y="472" text-anchor="middle" fill="#6D28D9" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(灰色)</text>
+
+    <line x1="346" y1="395" x2="392" y2="395" stroke="#64748B" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="426" y="304" width="220" height="182" rx="24" fill="url(#mixCard)" stroke="#BFAEFD" stroke-width="2"/>
+    <text x="536" y="352" text-anchor="middle" fill="#1E293B" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(正常)</text>
+    <text x="536" y="392" text-anchor="middle" fill="#6D28D9" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(灰色)◄</text>
+    <text x="536" y="432" text-anchor="middle" fill="#1E293B" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(正常)</text>
+    <text x="536" y="472" text-anchor="middle" fill="#6D28D9" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(灰色)◄</text>
+
+    <line x1="662" y1="395" x2="708" y2="395" stroke="#64748B" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="742" y="304" width="220" height="182" rx="24" fill="url(#grayCard)" stroke="#A78BFA" stroke-width="2"/>
+    <text x="852" y="402" text-anchor="middle" fill="#6D28D9" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(灰色)</text>
+    <text x="852" y="468" text-anchor="middle" fill="#6D28D9" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(灰色)</text>
+
+    <line x1="978" y1="395" x2="1024" y2="395" stroke="#64748B" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="1058" y="304" width="220" height="182" rx="24" fill="url(#doneCard)" stroke="#8AD1A8" stroke-width="2"/>
+    <text x="1168" y="398" text-anchor="middle" fill="#065F46" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(正常)</text>
+    <text x="1168" y="454" text-anchor="middle" fill="#065F46" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(正常)</text>
+
+    <text x="536" y="510" text-anchor="middle" fill="#7C3AED" font-size="18" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">流量逐步切到灰色</text>
+    <text x="852" y="510" text-anchor="middle" fill="#7C3AED" font-size="18" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">全站灰色</text>
+    <text x="1168" y="510" text-anchor="middle" fill="#059669" font-size="18" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">灰色提升为正常，回到干净状态</text>
+  </g>
+
+  <g>
+    <rect x="72" y="540" width="1296" height="328" rx="28" fill="url(#panel)" stroke="#D6DFEA" stroke-width="2" filter="url(#shadow)"/>
+    <text x="110" y="588" fill="#0F172A" font-size="28" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">第二轮：只有 B 发布，灰色泳道直接复用</text>
+    <text x="122" y="632" fill="#64748B" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">灰度部署</text>
+    <text x="438" y="632" fill="#64748B" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">逐步切流</text>
+    <text x="754" y="632" fill="#64748B" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">全量灰度</text>
+    <text x="1070" y="632" fill="#64748B" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">去标上线</text>
+
+    <rect x="110" y="658" width="220" height="182" rx="24" fill="url(#normalCard)" stroke="#C7D5E6" stroke-width="2"/>
+    <text x="220" y="724" text-anchor="middle" fill="#1E293B" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(正常)</text>
+    <text x="220" y="772" text-anchor="middle" fill="#1E293B" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(正常)</text>
+    <text x="220" y="812" text-anchor="middle" fill="#6D28D9" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(灰色)</text>
+
+    <line x1="346" y1="749" x2="392" y2="749" stroke="#64748B" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="426" y="658" width="220" height="182" rx="24" fill="url(#mixCard)" stroke="#BFAEFD" stroke-width="2"/>
+    <text x="536" y="724" text-anchor="middle" fill="#1E293B" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(正常)</text>
+    <text x="536" y="772" text-anchor="middle" fill="#1E293B" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(正常)</text>
+    <text x="536" y="812" text-anchor="middle" fill="#6D28D9" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(灰色)◄</text>
+
+    <line x1="662" y1="749" x2="708" y2="749" stroke="#64748B" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="742" y="658" width="220" height="182" rx="24" fill="url(#grayCard)" stroke="#A78BFA" stroke-width="2"/>
+    <text x="852" y="724" text-anchor="middle" fill="#1E293B" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(正常)</text>
+    <text x="852" y="796" text-anchor="middle" fill="#6D28D9" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(灰色)</text>
+
+    <line x1="978" y1="749" x2="1024" y2="749" stroke="#64748B" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="1058" y="658" width="220" height="182" rx="24" fill="url(#doneCard)" stroke="#8AD1A8" stroke-width="2"/>
+    <text x="1168" y="724" text-anchor="middle" fill="#065F46" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(正常)</text>
+    <text x="1168" y="780" text-anchor="middle" fill="#065F46" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(正常)</text>
+
+    <text x="220" y="864" text-anchor="middle" fill="#475569" font-size="18" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A 不参与灰度</text>
+    <text x="536" y="864" text-anchor="middle" fill="#7C3AED" font-size="18" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">流量逐步切到灰色</text>
+    <text x="852" y="864" text-anchor="middle" fill="#7C3AED" font-size="18" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">全站灰色</text>
+    <text x="1168" y="864" text-anchor="middle" fill="#059669" font-size="18" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">灰色提升为正常，回到干净状态</text>
+  </g>
+
+  <g>
+    <rect x="72" y="894" width="1296" height="300" rx="28" fill="url(#panel)" stroke="#D6DFEA" stroke-width="2" filter="url(#shadow)"/>
+    <text x="110" y="942" fill="#0F172A" font-size="28" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">第三轮：A、B 再次一起发布，继续复用同一套规则</text>
+    <rect x="110" y="982" width="1218" height="154" rx="26" fill="url(#doneCard)" stroke="#8AD1A8" stroke-width="2"/>
+    <text x="156" y="1042" fill="#065F46" font-size="26" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">流程保持不变</text>
+    <text x="156" y="1092" fill="#047857" font-size="22" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">1. 继续按“灰度部署 → 逐步切流 → 全量灰度 → 去标上线”执行</text>
+    <text x="156" y="1130" fill="#047857" font-size="22" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">2. 灰色泳道始终空闲可复用，路由规则始终固定为“正常 vs 灰色”</text>
+    <text x="720" y="1180" text-anchor="middle" fill="#0F172A" font-size="26" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">每轮发布的路由规则始终是同一套：正常 vs 灰色，简单清晰</text>
+  </g>
+</svg>
