@@ -1,0 +1,160 @@
+<svg width="1440" height="1460" viewBox="0 0 1440 1460" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="60" x2="1320" y2="1400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8F2"/>
+      <stop offset="1" stop-color="#FFF3E8"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFF9F3"/>
+    </linearGradient>
+    <linearGradient id="grayCard" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F1F5F9"/>
+      <stop offset="1" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="blueCard" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#CDEBFF"/>
+    </linearGradient>
+    <linearGradient id="greenCard" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#DCFCE7"/>
+      <stop offset="1" stop-color="#C7F4D7"/>
+    </linearGradient>
+    <linearGradient id="warnCard" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFF7ED"/>
+      <stop offset="1" stop-color="#FFE9D5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#7C2D12" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7V0Z" fill="#78716C"/>
+    </marker>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#F0DCC8" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1440" height="1460" rx="36" fill="url(#bg)"/>
+  <rect x="32" y="32" width="1376" height="1396" rx="28" fill="url(#grid)" opacity="0.45"/>
+
+  <text x="720" y="96" text-anchor="middle" fill="#7C2D12" font-size="38" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">无去标：颜色持续累积，路由复杂度不断上升</text>
+  <text x="720" y="138" text-anchor="middle" fill="#9A3412" font-size="20" font-weight="500" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">不去标意味着灰度标识永久保留，后续发布必须引入新颜色，最终形成多颜色并存</text>
+
+  <g>
+    <rect x="72" y="186" width="1296" height="336" rx="28" fill="url(#panel)" stroke="#F0D6BF" stroke-width="2" filter="url(#shadow)"/>
+    <text x="110" y="234" fill="#7C2D12" font-size="28" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">第一轮：A、B 一起灰度发布</text>
+    <text x="122" y="278" fill="#A16207" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">灰度部署</text>
+    <text x="438" y="278" fill="#A16207" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">逐步切流</text>
+    <text x="754" y="278" fill="#A16207" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">全量灰度</text>
+    <text x="1060" y="278" fill="#A16207" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">不去标，下线老部署</text>
+
+    <rect x="110" y="304" width="220" height="182" rx="24" fill="url(#grayCard)" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="220" y="352" text-anchor="middle" fill="#1E3A8A" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(正常)</text>
+    <text x="220" y="392" text-anchor="middle" fill="#6B7280" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(灰色)</text>
+    <text x="220" y="432" text-anchor="middle" fill="#1E3A8A" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(正常)</text>
+    <text x="220" y="472" text-anchor="middle" fill="#6B7280" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(灰色)</text>
+
+    <line x1="346" y1="395" x2="392" y2="395" stroke="#78716C" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="426" y="304" width="220" height="182" rx="24" fill="url(#grayCard)" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="536" y="352" text-anchor="middle" fill="#1E3A8A" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(正常)</text>
+    <text x="536" y="392" text-anchor="middle" fill="#6B7280" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(灰色)◄</text>
+    <text x="536" y="432" text-anchor="middle" fill="#1E3A8A" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(正常)</text>
+    <text x="536" y="472" text-anchor="middle" fill="#6B7280" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(灰色)◄</text>
+
+    <line x1="662" y1="395" x2="708" y2="395" stroke="#78716C" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="742" y="304" width="220" height="182" rx="24" fill="url(#grayCard)" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="852" y="402" text-anchor="middle" fill="#6B7280" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(灰色)</text>
+    <text x="852" y="468" text-anchor="middle" fill="#6B7280" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(灰色)</text>
+
+    <line x1="978" y1="395" x2="1024" y2="395" stroke="#78716C" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="1058" y="304" width="220" height="182" rx="24" fill="url(#warnCard)" stroke="#FDBA74" stroke-width="2"/>
+    <text x="1168" y="402" text-anchor="middle" fill="#6B7280" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(灰色)</text>
+    <text x="1168" y="458" text-anchor="middle" fill="#6B7280" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(灰色)</text>
+
+    <text x="1168" y="510" text-anchor="middle" fill="#DC2626" font-size="18" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">无正常 provider 兜底</text>
+  </g>
+
+  <g>
+    <rect x="72" y="548" width="1296" height="386" rx="28" fill="url(#panel)" stroke="#F0D6BF" stroke-width="2" filter="url(#shadow)"/>
+    <text x="110" y="596" fill="#7C2D12" font-size="28" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">第二轮：只有 B 发布新版本，必须引入蓝色</text>
+    <text x="110" y="634" fill="#2563EB" font-size="20" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B 已经是灰色，新版本不能再叫灰色，只能新增蓝色</text>
+    <text x="122" y="678" fill="#A16207" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">蓝色部署</text>
+    <text x="438" y="678" fill="#A16207" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">逐步切流</text>
+    <text x="754" y="678" fill="#A16207" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">全量蓝色</text>
+    <text x="1060" y="678" fill="#A16207" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">下线灰色 B</text>
+
+    <rect x="110" y="704" width="220" height="182" rx="24" fill="url(#grayCard)" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="220" y="760" text-anchor="middle" fill="#475569" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(灰色)</text>
+    <text x="220" y="800" text-anchor="middle" fill="#475569" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(灰色)</text>
+    <text x="220" y="840" text-anchor="middle" fill="#2563EB" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(蓝色)</text>
+
+    <line x1="346" y1="795" x2="392" y2="795" stroke="#78716C" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="426" y="704" width="220" height="182" rx="24" fill="url(#blueCard)" stroke="#7DD3FC" stroke-width="2"/>
+    <text x="536" y="760" text-anchor="middle" fill="#475569" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(灰色)</text>
+    <text x="536" y="800" text-anchor="middle" fill="#475569" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(灰色)</text>
+    <text x="536" y="840" text-anchor="middle" fill="#1D4ED8" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(蓝色)◄</text>
+
+    <line x1="662" y1="795" x2="708" y2="795" stroke="#78716C" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="742" y="704" width="220" height="182" rx="24" fill="url(#blueCard)" stroke="#7DD3FC" stroke-width="2"/>
+    <text x="852" y="760" text-anchor="middle" fill="#475569" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(灰色)</text>
+    <text x="852" y="832" text-anchor="middle" fill="#1D4ED8" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(蓝色)</text>
+
+    <line x1="978" y1="795" x2="1024" y2="795" stroke="#78716C" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="1058" y="704" width="220" height="182" rx="24" fill="url(#warnCard)" stroke="#FDBA74" stroke-width="2"/>
+    <text x="1168" y="760" text-anchor="middle" fill="#475569" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(灰色)</text>
+    <text x="1168" y="832" text-anchor="middle" fill="#1D4ED8" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(蓝色)</text>
+
+    <text x="220" y="890" text-anchor="middle" fill="#B45309" font-size="18" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">路由开始变色：灰色 → 蓝色</text>
+    <text x="852" y="890" text-anchor="middle" fill="#B45309" font-size="18" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A 是灰色，B 是蓝色</text>
+    <text x="1168" y="890" text-anchor="middle" fill="#DC2626" font-size="18" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">不同服务颜色开始分叉</text>
+  </g>
+
+  <g>
+    <rect x="72" y="960" width="1296" height="420" rx="28" fill="url(#panel)" stroke="#F0D6BF" stroke-width="2" filter="url(#shadow)"/>
+    <text x="110" y="1008" fill="#7C2D12" font-size="28" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">第三轮：C 做灰度部署，A、B 不参加</text>
+    <text x="110" y="1046" fill="#16A34A" font-size="20" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A 仍是灰色，B 已是蓝色，这一轮只有 C 新增绿色版本</text>
+    <text x="122" y="1090" fill="#A16207" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">绿色部署</text>
+    <text x="438" y="1090" fill="#A16207" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">逐步切流</text>
+    <text x="754" y="1090" fill="#A16207" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">全量绿色</text>
+    <text x="1060" y="1090" fill="#A16207" font-size="18" font-weight="600" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">下线旧版本</text>
+
+    <rect x="110" y="1116" width="220" height="216" rx="24" fill="url(#grayCard)" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="220" y="1168" text-anchor="middle" fill="#6B7280" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(灰色)</text>
+    <text x="220" y="1212" text-anchor="middle" fill="#1D4ED8" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(蓝色)</text>
+    <text x="220" y="1256" text-anchor="middle" fill="#1E3A8A" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">C(正常)</text>
+    <text x="220" y="1300" text-anchor="middle" fill="#16A34A" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">C(绿色)</text>
+
+    <line x1="346" y1="1224" x2="392" y2="1224" stroke="#78716C" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="426" y="1116" width="220" height="216" rx="24" fill="url(#greenCard)" stroke="#86EFAC" stroke-width="2"/>
+    <text x="536" y="1168" text-anchor="middle" fill="#6B7280" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(灰色)</text>
+    <text x="536" y="1212" text-anchor="middle" fill="#1D4ED8" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(蓝色)</text>
+    <text x="536" y="1256" text-anchor="middle" fill="#1E3A8A" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">C(正常)</text>
+    <text x="536" y="1300" text-anchor="middle" fill="#16A34A" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">C(绿色)◄</text>
+
+    <line x1="662" y1="1224" x2="708" y2="1224" stroke="#78716C" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="742" y="1116" width="220" height="182" rx="24" fill="url(#greenCard)" stroke="#86EFAC" stroke-width="2"/>
+    <text x="852" y="1168" text-anchor="middle" fill="#6B7280" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(灰色)</text>
+    <text x="852" y="1220" text-anchor="middle" fill="#1D4ED8" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(蓝色)</text>
+    <text x="852" y="1272" text-anchor="middle" fill="#16A34A" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">C(绿色)</text>
+
+    <line x1="978" y1="1207" x2="1024" y2="1207" stroke="#78716C" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="1058" y="1116" width="220" height="182" rx="24" fill="url(#warnCard)" stroke="#FDBA74" stroke-width="2"/>
+    <text x="1168" y="1168" text-anchor="middle" fill="#6B7280" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A(灰色)</text>
+    <text x="1168" y="1220" text-anchor="middle" fill="#1D4ED8" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">B(蓝色)</text>
+    <text x="1168" y="1272" text-anchor="middle" fill="#16A34A" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">C(绿色)</text>
+
+    <text x="220" y="1356" text-anchor="middle" fill="#B45309" font-size="18" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">A/B 不参与灰度，C 保留正常版并新增绿色版</text>
+    <text x="852" y="1356" text-anchor="middle" fill="#B45309" font-size="18" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">路由需要同时兼容灰色、蓝色、绿色</text>
+    <text x="1168" y="1356" text-anchor="middle" fill="#DC2626" font-size="18" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">第四轮还要继续找新颜色</text>
+  </g>
+</svg>
