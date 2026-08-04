@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Pulsar 消息发送量时间线曲线图</title>
+  <desc id="desc">展示 Pulsar 消息发送量变化，并标注急升、峰值与回落说明。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#eef6f0"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#ea580c" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#1f2937" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      text { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill: #1f2937; }
+      .title { font-size: 28px; font-weight: 700; }
+      .subtitle { font-size: 15px; fill: #475569; }
+      .tick { font-size: 13px; fill: #64748b; }
+      .note-title { font-size: 15px; font-weight: 700; }
+      .note-body { font-size: 13px; fill: #334155; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1200" height="560" rx="28" fill="url(#bg)"/>
+  <rect x="36" y="30" width="1128" height="494" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="76" y="80" class="title">Pulsar 消息发送量趋势图</text>
+  <text x="76" y="108" class="subtitle">2026-08-03 23:00 至 2026-08-04 00:15（CST）</text>
+  <text x="1098" y="108" text-anchor="end" class="tick">单位：msg/s</text>
+  <g transform="translate(90 140)">
+    <line x1="0" y1="0" x2="0" y2="320" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="0" y1="320" x2="1000" y2="320" stroke="#94a3b8" stroke-width="1.5"/>
+    <g stroke="#e2e8f0" stroke-width="1">
+      <line x1="0" y1="320" x2="1000" y2="320"/>
+      <line x1="0" y1="256" x2="1000" y2="256"/>
+      <line x1="0" y1="192" x2="1000" y2="192"/>
+      <line x1="0" y1="128" x2="1000" y2="128"/>
+      <line x1="0" y1="64" x2="1000" y2="64"/>
+      <line x1="0" y1="0" x2="1000" y2="0"/>
+    </g>
+    <g class="tick">
+      <text x="-14" y="325" text-anchor="end">1,000</text>
+      <text x="-14" y="261" text-anchor="end">1,500</text>
+      <text x="-14" y="197" text-anchor="end">2,000</text>
+      <text x="-14" y="133" text-anchor="end">2,500</text>
+      <text x="-14" y="69" text-anchor="end">3,000</text>
+      <text x="-14" y="5" text-anchor="end">3,500</text>
+    </g>
+    <g class="tick">
+      <text x="0" y="350" text-anchor="middle">23:00</text>
+      <text x="125" y="350" text-anchor="middle">23:20</text>
+      <text x="250" y="350" text-anchor="middle">23:30~59</text>
+      <text x="375" y="350" text-anchor="middle">00:00</text>
+      <text x="500" y="350" text-anchor="middle">00:02</text>
+      <text x="625" y="350" text-anchor="middle">00:03</text>
+      <text x="750" y="350" text-anchor="middle">00:05</text>
+      <text x="875" y="350" text-anchor="middle">00:10</text>
+      <text x="1000" y="350" text-anchor="middle">00:15</text>
+    </g>
+    <path d="M0,204.7 L125,315.3 L250,289.3 L375,275.8 L500,104 L625,59.6 L750,179.1 L875,281.9 L1000,289.7 L1000,320 L0,320 Z" fill="url(#area)"/>
+    <path d="M0,204.7 L125,315.3 L250,289.3 L375,275.8 L500,104 L625,59.6 L750,179.1 L875,281.9 L1000,289.7" fill="none" stroke="#ea580c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#ea580c" stroke="#ffffff" stroke-width="3">
+      <circle cx="0" cy="204.7" r="6"/>
+      <circle cx="125" cy="315.3" r="6"/>
+      <circle cx="250" cy="289.3" r="6"/>
+      <circle cx="375" cy="275.8" r="6"/>
+      <circle cx="500" cy="104" r="7"/>
+      <circle cx="625" cy="59.6" r="7"/>
+      <circle cx="750" cy="179.1" r="6"/>
+      <circle cx="875" cy="281.9" r="6"/>
+      <circle cx="1000" cy="289.7" r="6"/>
+    </g>
+    <text x="625" y="44" text-anchor="middle" font-size="12" font-weight="700">3,022</text>
+    <g>
+      <line x1="125" y1="315.3" x2="210" y2="258" stroke="#64748b" stroke-width="1.5"/>
+      <rect x="210" y="228" width="152" height="52" rx="12" fill="#fff7ed" stroke="#fdba74"/>
+      <text x="226" y="250" class="note-title" fill="#c2410c">23:20 最低点</text>
+      <text x="226" y="270" class="note-body">夜间低谷约 1,034/s</text>
+    </g>
+    <g>
+      <line x1="500" y1="104" x2="550" y2="84" stroke="#64748b" stroke-width="1.5"/>
+      <rect x="550" y="56" width="176" height="52" rx="12" fill="#eff6ff" stroke="#93c5fd"/>
+      <text x="566" y="78" class="note-title" fill="#1d4ed8">00:02 急剧上升</text>
+      <text x="566" y="98" class="note-body">活动消息脉冲快速进入队列</text>
+    </g>
+    <g>
+      <line x1="625" y1="59.6" x2="760" y2="36" stroke="#64748b" stroke-width="1.5"/>
+      <rect x="760" y="8" width="160" height="52" rx="12" fill="#f0fdf4" stroke="#86efac"/>
+      <text x="776" y="30" class="note-title" fill="#15803d">00:03 峰值</text>
+      <text x="776" y="50" class="note-body">消息发送量达到 3,022/s</text>
+    </g>
+    <g>
+      <line x1="1000" y1="289.7" x2="900" y2="300" stroke="#64748b" stroke-width="1.5"/>
+      <rect x="700" y="284" width="184" height="52" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+      <text x="716" y="306" class="note-title" fill="#334155">00:15 接近基线</text>
+      <text x="716" y="326" class="note-body">脉冲结束后回到常规水平</text>
+    </g>
+  </g>
+</svg>
