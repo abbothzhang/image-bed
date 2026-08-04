@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Pulsar 消息堆积量时间线曲线图</title>
+  <desc id="desc">展示 Pulsar 堆积量变化，并标注急升、峰值和消化过程。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#eef6f0"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#1f2937" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      text { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill: #1f2937; }
+      .title { font-size: 28px; font-weight: 700; }
+      .subtitle { font-size: 15px; fill: #475569; }
+      .tick { font-size: 13px; fill: #64748b; }
+      .note-title { font-size: 15px; font-weight: 700; }
+      .note-body { font-size: 13px; fill: #334155; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1200" height="560" rx="28" fill="url(#bg)"/>
+  <rect x="36" y="30" width="1128" height="494" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="76" y="80" class="title">Pulsar 消息堆积量趋势图</text>
+  <text x="76" y="108" class="subtitle">2026-08-03 23:00 至 2026-08-04 00:30（CST）</text>
+  <text x="1098" y="108" text-anchor="end" class="tick">单位：条消息</text>
+  <g transform="translate(90 140)">
+    <line x1="0" y1="0" x2="0" y2="320" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="0" y1="320" x2="1000" y2="320" stroke="#94a3b8" stroke-width="1.5"/>
+    <g stroke="#e2e8f0" stroke-width="1">
+      <line x1="0" y1="320" x2="1000" y2="320"/>
+      <line x1="0" y1="256" x2="1000" y2="256"/>
+      <line x1="0" y1="192" x2="1000" y2="192"/>
+      <line x1="0" y1="128" x2="1000" y2="128"/>
+      <line x1="0" y1="64" x2="1000" y2="64"/>
+      <line x1="0" y1="0" x2="1000" y2="0"/>
+    </g>
+    <g class="tick">
+      <text x="-14" y="325" text-anchor="end">300K</text>
+      <text x="-14" y="261" text-anchor="end">380K</text>
+      <text x="-14" y="197" text-anchor="end">460K</text>
+      <text x="-14" y="133" text-anchor="end">540K</text>
+      <text x="-14" y="69" text-anchor="end">620K</text>
+      <text x="-14" y="5" text-anchor="end">700K</text>
+    </g>
+    <g class="tick">
+      <text x="0" y="350" text-anchor="middle">23:00</text>
+      <text x="200" y="350" text-anchor="middle">23:55</text>
+      <text x="400" y="350" text-anchor="middle">00:02</text>
+      <text x="600" y="350" text-anchor="middle">00:08</text>
+      <text x="800" y="350" text-anchor="middle">00:12</text>
+      <text x="1000" y="350" text-anchor="middle">00:30</text>
+    </g>
+    <path d="M0,123.5 L200,289.5 L400,208.8 L600,47.5 L800,124.5 L1000,195.2 L1000,320 L0,320 Z" fill="url(#area)"/>
+    <path d="M0,123.5 L200,289.5 L400,208.8 L600,47.5 L800,124.5 L1000,195.2" fill="none" stroke="#7c3aed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#7c3aed" stroke="#ffffff" stroke-width="3">
+      <circle cx="0" cy="123.5" r="6"/>
+      <circle cx="200" cy="289.5" r="6"/>
+      <circle cx="400" cy="208.8" r="6"/>
+      <circle cx="600" cy="47.5" r="7"/>
+      <circle cx="800" cy="124.5" r="6"/>
+      <circle cx="1000" cy="195.2" r="6"/>
+    </g>
+    <text x="600" y="32" text-anchor="middle" font-size="12" font-weight="700">641,629</text>
+    <g>
+      <line x1="200" y1="289.5" x2="260" y2="246" stroke="#64748b" stroke-width="1.5"/>
+      <rect x="260" y="214" width="164" height="52" rx="12" fill="#fff7ed" stroke="#fdba74"/>
+      <text x="276" y="236" class="note-title" fill="#c2410c">23:55 低点</text>
+      <text x="276" y="256" class="note-body">消费达到窗口内最低积压</text>
+    </g>
+    <g>
+      <line x1="400" y1="208.8" x2="500" y2="152" stroke="#64748b" stroke-width="1.5"/>
+      <rect x="500" y="124" width="156" height="52" rx="12" fill="#eff6ff" stroke="#93c5fd"/>
+      <text x="516" y="146" class="note-title" fill="#1d4ed8">00:02 急升</text>
+      <text x="516" y="166" class="note-body">生产速率短时超过消费速率</text>
+    </g>
+    <g>
+      <line x1="600" y1="47.5" x2="690" y2="34" stroke="#64748b" stroke-width="1.5"/>
+      <rect x="690" y="8" width="164" height="52" rx="12" fill="#f0fdf4" stroke="#86efac"/>
+      <text x="706" y="30" class="note-title" fill="#15803d">00:08 峰值</text>
+      <text x="706" y="50" class="note-body">堆积量达到 641,629</text>
+    </g>
+    <g>
+      <line x1="1000" y1="195.2" x2="900" y2="240" stroke="#64748b" stroke-width="1.5"/>
+      <rect x="690" y="232" width="194" height="52" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+      <text x="706" y="254" class="note-title" fill="#334155">00:30 仍在消化</text>
+      <text x="706" y="274" class="note-body">已明显回落，但尚未完全清空</text>
+    </g>
+  </g>
+</svg>
