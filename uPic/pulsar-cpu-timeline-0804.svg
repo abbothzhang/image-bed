@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Pulsar CPU 时间线曲线图</title>
+  <desc id="desc">展示 2026-08-03 23:00 至 2026-08-04 00:30 的 Pulsar CPU 利用率变化，并标注峰值与恢复说明。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="100%" stop-color="#eef6f0"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f766e" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0f766e" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#1f2937" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      text { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill: #1f2937; }
+      .title { font-size: 28px; font-weight: 700; }
+      .subtitle { font-size: 15px; fill: #475569; }
+      .tick { font-size: 13px; fill: #64748b; }
+      .note-title { font-size: 15px; font-weight: 700; }
+      .note-body { font-size: 13px; fill: #334155; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1200" height="560" rx="28" fill="url(#bg)"/>
+  <rect x="36" y="30" width="1128" height="494" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="76" y="80" class="title">Pulsar CPU 利用率趋势图</text>
+  <text x="76" y="108" class="subtitle">2026-08-03 23:00 至 2026-08-04 00:30（CST）</text>
+  <text x="1098" y="108" text-anchor="end" class="tick">单位：CPU%</text>
+  <g transform="translate(90 140)">
+    <line x1="0" y1="0" x2="0" y2="320" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="0" y1="320" x2="1000" y2="320" stroke="#94a3b8" stroke-width="1.5"/>
+    <g stroke="#e2e8f0" stroke-width="1">
+      <line x1="0" y1="320" x2="1000" y2="320"/>
+      <line x1="0" y1="256" x2="1000" y2="256"/>
+      <line x1="0" y1="192" x2="1000" y2="192"/>
+      <line x1="0" y1="128" x2="1000" y2="128"/>
+      <line x1="0" y1="64" x2="1000" y2="64"/>
+      <line x1="0" y1="0" x2="1000" y2="0"/>
+    </g>
+    <g class="tick">
+      <text x="-14" y="325" text-anchor="end">40</text>
+      <text x="-14" y="261" text-anchor="end">43</text>
+      <text x="-14" y="197" text-anchor="end">46</text>
+      <text x="-14" y="133" text-anchor="end">49</text>
+      <text x="-14" y="69" text-anchor="end">52</text>
+      <text x="-14" y="5" text-anchor="end">55</text>
+    </g>
+    <g class="tick">
+      <text x="0" y="350" text-anchor="middle">23:00~10</text>
+      <text x="170" y="350" text-anchor="middle">23:30~59</text>
+      <text x="340" y="350" text-anchor="middle">00:00</text>
+      <text x="510" y="350" text-anchor="middle">00:03</text>
+      <text x="680" y="350" text-anchor="middle">00:10</text>
+      <text x="850" y="350" text-anchor="middle">00:20</text>
+      <text x="1000" y="350" text-anchor="middle">00:30</text>
+    </g>
+    <path d="M0,149.3 L170,253.9 L340,224 L510,47.5 L680,149.3 L850,268.8 L1000,307.2 L1000,320 L0,320 Z" fill="url(#area)"/>
+    <path d="M0,149.3 L170,253.9 L340,224 L510,47.5 L680,149.3 L850,268.8 L1000,307.2" fill="none" stroke="#0f766e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#0f766e" stroke="#ffffff" stroke-width="3">
+      <circle cx="0" cy="149.3" r="6"/>
+      <circle cx="170" cy="253.9" r="6"/>
+      <circle cx="340" cy="224" r="6"/>
+      <circle cx="510" cy="47.5" r="7"/>
+      <circle cx="680" cy="149.3" r="6"/>
+      <circle cx="850" cy="268.8" r="6"/>
+      <circle cx="1000" cy="307.2" r="6"/>
+    </g>
+    <text x="510" y="32" text-anchor="middle" font-size="12" font-weight="700">52.8%</text>
+    <g>
+      <line x1="0" y1="149.3" x2="90" y2="96" stroke="#64748b" stroke-width="1.5"/>
+      <rect x="90" y="64" width="160" height="52" rx="12" fill="#fff7ed" stroke="#fdba74"/>
+      <text x="106" y="86" class="note-title" fill="#c2410c">23:00~23:10</text>
+      <text x="106" y="106" class="note-body">日间较高，维持 46%~48%</text>
+    </g>
+    <g>
+      <line x1="510" y1="47.5" x2="560" y2="46" stroke="#64748b" stroke-width="1.5"/>
+      <rect x="560" y="18" width="184" height="52" rx="12" fill="#eff6ff" stroke="#93c5fd"/>
+      <text x="576" y="40" class="note-title" fill="#1d4ed8">00:03 峰值</text>
+      <text x="576" y="60" class="note-body">活动脉冲拉升至 52.8%</text>
+    </g>
+    <g>
+      <line x1="850" y1="268.8" x2="760" y2="282" stroke="#64748b" stroke-width="1.5"/>
+      <rect x="590" y="272" width="156" height="52" rx="12" fill="#f0fdf4" stroke="#86efac"/>
+      <text x="606" y="294" class="note-title" fill="#15803d">00:20 恢复正常</text>
+      <text x="606" y="314" class="note-body">回落到夜间基线区间</text>
+    </g>
+  </g>
+</svg>
