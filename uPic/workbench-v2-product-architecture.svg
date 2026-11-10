@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2100" height="1600" viewBox="0 0 2100 1600" role="img" aria-labelledby="title desc">
+  <title id="title">swork 产品架构</title>
+  <desc id="desc">展示 swork 的用户角色、业务场景、专项需求任务缺陷四类模型，以及按进度、质量、效率、跨项目和团队组织的主页自定义视图。</desc>
+  <defs>
+    <filter id="shadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="10" flood-color="#1c3150" flood-opacity="0.07"/>
+    </filter>
+    <style>
+      text { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill: #17263d; }
+      .title { font-size: 42px; font-weight: 750; letter-spacing: -0.6px; }
+      .subtitle { font-size: 18px; fill: #64748b; }
+      .eyebrow { font-size: 14px; font-weight: 650; letter-spacing: .5px; fill: #527199; }
+      .side-title { font-size: 20px; font-weight: 700; fill: #2d4968; }
+      .section-title { font-size: 24px; font-weight: 720; }
+      .section-note { font-size: 15px; fill: #738198; }
+      .role-title { font-size: 20px; font-weight: 700; }
+      .role-copy { font-size: 15px; fill: #5f6f83; }
+      .scenario { font-size: 16px; font-weight: 650; }
+      .model-title { font-size: 19px; font-weight: 700; }
+      .model-copy { font-size: 14px; fill: #6b7b91; }
+      .model-inverse { fill: #263d57; }
+      .model-inverse-copy { fill: #687b91; }
+      .view-title { font-size: 23px; font-weight: 720; }
+      .count { font-size: 14px; font-weight: 700; }
+      .item-title { font-size: 16px; font-weight: 650; }
+      .item-copy { font-size: 13px; fill: #718096; }
+      .footer-title { font-size: 16px; font-weight: 700; fill: #ffffff; }
+      .footer-copy { font-size: 15px; fill: #f1f6fb; }
+    </style>
+  </defs>
+  <rect width="2100" height="1600" fill="#f6f8fb"/>
+  <text x="64" y="72" class="eyebrow">swork / 产品地图</text>
+  <text x="64" y="126" class="title">swork 产品架构</text>
+  <text x="64" y="160" class="subtitle">围绕工作模型组织协作数据，并通过自定义视图服务不同角色的日常判断</text>
+  <rect x="64" y="184" width="1972" height="2" fill="#dbe3ec"/>
+  <rect x="64" y="184" width="210" height="2" fill="#36699f"/>
+
+  <!-- 用户角色 -->
+  <text x="2036" y="218" text-anchor="end" class="section-note">按角色选择主页关注内容</text>
+  <rect x="64" y="244" width="164" height="126" fill="#e9eff6" stroke="#d7e0ea"/>
+  <rect x="64" y="244" width="5" height="126" fill="#557caf"/>
+  <text x="146" y="314" text-anchor="middle" class="side-title">用户角色</text>
+  <g transform="translate(180 0)">
+    <rect x="64" y="244" width="286" height="126" rx="8" fill="#fff" stroke="#dce4ed"/>
+    <rect x="64" y="244" width="4" height="126" fill="#557caf"/>
+    <text x="86" y="280" class="role-title">团队 Leader</text>
+    <text x="86" y="311" class="role-copy">看团队待办、完成情况与</text><text x="86" y="334" class="role-copy">成员工作负载</text>
+    <rect x="366" y="244" width="286" height="126" rx="8" fill="#fff" stroke="#dce4ed"/>
+    <rect x="366" y="244" width="4" height="126" fill="#8274b8"/>
+    <text x="388" y="280" class="role-title">PMO</text>
+    <text x="388" y="311" class="role-copy">看跨项目进展、迭代计划与</text><text x="388" y="334" class="role-copy">项目交付表现</text>
+    <rect x="668" y="244" width="286" height="126" rx="8" fill="#fff" stroke="#dce4ed"/>
+    <rect x="668" y="244" width="4" height="126" fill="#b28a4b"/>
+    <text x="690" y="280" class="role-title">产品</text>
+    <text x="690" y="311" class="role-copy">跟踪需求从创建、评审到</text><text x="690" y="334" class="role-copy">开发交付的状态</text>
+    <rect x="970" y="244" width="286" height="126" rx="8" fill="#fff" stroke="#dce4ed"/>
+    <rect x="970" y="244" width="4" height="126" fill="#4d907a"/>
+    <text x="992" y="280" class="role-title">研发</text>
+    <text x="992" y="311" class="role-copy">处理需求、任务和缺陷，</text><text x="992" y="334" class="role-copy">交接并跟进后续状态</text>
+    <rect x="1272" y="244" width="286" height="126" rx="8" fill="#fff" stroke="#dce4ed"/>
+    <rect x="1272" y="244" width="4" height="126" fill="#ba6c77"/>
+    <text x="1294" y="280" class="role-title">测试</text>
+    <text x="1294" y="311" class="role-copy">跟踪缺陷趋势、分布与</text><text x="1294" y="334" class="role-copy">项目质量指标</text>
+    <rect x="1574" y="244" width="282" height="126" rx="8" fill="#fff" stroke="#dce4ed"/>
+    <rect x="1574" y="244" width="4" height="126" fill="#72849a"/>
+    <text x="1596" y="280" class="role-title">通用</text>
+    <text x="1596" y="311" class="role-copy">IT、行政、法务等团队，</text><text x="1596" y="334" class="role-copy">管理各自工作与待办</text>
+  </g>
+
+  <!-- 业务场景 -->
+  <text x="2036" y="373" text-anchor="end" class="section-note">从个人待办到跨团队交付与度量</text>
+  <rect x="64" y="394" width="164" height="76" fill="#e9eff6" stroke="#d7e0ea"/>
+  <rect x="64" y="394" width="5" height="76" fill="#557caf"/>
+  <text x="146" y="440" text-anchor="middle" class="side-title">业务场景</text>
+  <g transform="translate(180 -46)">
+    <rect x="64" y="440" width="1792" height="76" rx="8" fill="#fff" stroke="#dce4ed"/>
+    <rect x="82" y="456" width="202" height="44" rx="12" fill="#edf3ff"/><text x="183" y="484" text-anchor="middle" class="scenario" fill="#2f65cc">需求交付</text>
+    <rect x="296" y="456" width="202" height="44" rx="12" fill="#eef8f5"/><text x="397" y="484" text-anchor="middle" class="scenario" fill="#21856a">任务协作</text>
+    <rect x="510" y="456" width="202" height="44" rx="12" fill="#fff1f2"/><text x="611" y="484" text-anchor="middle" class="scenario" fill="#c64f5d">缺陷跟踪</text>
+    <rect x="724" y="456" width="202" height="44" rx="12" fill="#f2efff"/><text x="825" y="484" text-anchor="middle" class="scenario" fill="#6e59c0">团队进展洞察</text>
+    <rect x="938" y="456" width="202" height="44" rx="12" fill="#fff5e9"/><text x="1039" y="484" text-anchor="middle" class="scenario" fill="#a86b19">跨空间工作管理</text>
+    <rect x="1152" y="456" width="202" height="44" rx="12" fill="#eef5fb"/><text x="1253" y="484" text-anchor="middle" class="scenario" fill="#426684">Jira 协同</text>
+    <rect x="1366" y="456" width="202" height="44" rx="12" fill="#edf8f3"/><text x="1467" y="484" text-anchor="middle" class="scenario" fill="#31825e">流程自动化</text>
+    <rect x="1580" y="456" width="258" height="44" rx="12" fill="#f1f3f7"/><text x="1709" y="484" text-anchor="middle" class="scenario" fill="#5c687a">效率与质量分析</text>
+  </g>
+
+  <!-- 模型 -->
+  <text x="2036" y="478" text-anchor="end" class="section-note">工作对象 · 专项 / 需求 / 任务 / 缺陷</text>
+  <rect x="64" y="500" width="164" height="132" fill="#e9eff6" stroke="#d7e0ea"/>
+  <rect x="64" y="500" width="5" height="132" fill="#557caf"/>
+  <text x="146" y="574" text-anchor="middle" class="side-title">工作模型</text>
+  <g transform="translate(0 -88)">
+    <rect x="244" y="588" width="1792" height="132" rx="8" fill="#e9eff6" stroke="#d7e0ea"/>
+    <rect x="264" y="608" width="426" height="92" rx="6" fill="#fff" stroke="#d5dfea"/>
+    <text x="288" y="646" class="model-inverse" font-size="20" font-weight="700">专项</text><text x="288" y="675" class="model-inverse-copy" font-size="14">组织专项工作与阶段跟踪</text>
+    <rect x="706" y="608" width="426" height="92" rx="6" fill="#fff" stroke="#d5dfea"/>
+    <text x="730" y="646" class="model-inverse" font-size="20" font-weight="700">需求</text><text x="730" y="675" class="model-inverse-copy" font-size="14">描述目标、计划和交付结果</text>
+    <rect x="1148" y="608" width="426" height="92" rx="6" fill="#fff" stroke="#d5dfea"/>
+    <text x="1172" y="646" class="model-inverse" font-size="20" font-weight="700">任务</text><text x="1172" y="675" class="model-inverse-copy" font-size="14">拆分执行工作并跟踪完成</text>
+    <rect x="1590" y="608" width="426" height="92" rx="6" fill="#fff" stroke="#d5dfea"/>
+    <text x="1614" y="646" class="model-inverse" font-size="20" font-weight="700">缺陷</text><text x="1614" y="675" class="model-inverse-copy" font-size="14">记录问题、修复过程和结果</text>
+  </g>
+
+  <!-- 自定义视图 -->
+  <text x="2036" y="636" text-anchor="end" class="section-note">模板按视图主题分类，供不同角色订阅到主页</text>
+  <rect x="64" y="660" width="164" height="836" fill="#e9eff6" stroke="#d7e0ea"/>
+  <rect x="64" y="660" width="5" height="836" fill="#557caf"/>
+  <text x="146" y="1060" text-anchor="middle" class="side-title">主页自定义</text>
+  <text x="146" y="1090" text-anchor="middle" class="side-title">视图</text>
+
+  <!-- 进度 -->
+  <g transform="translate(180 -134)">
+  <g>
+    <rect x="64" y="794" width="576" height="480" rx="10" fill="#fff" stroke="#dce4ed"/>
+    <rect x="64" y="794" width="576" height="6" fill="#557caf"/>
+    <text x="88" y="847" class="view-title">进度</text><rect x="550" y="821" width="60" height="28" rx="14" fill="#edf3ff"/><text x="580" y="840" text-anchor="middle" class="count" fill="#557caf">6 项</text>
+    <rect x="88" y="875" width="252" height="86" rx="12" fill="#f3f6ff" stroke="#e2eaff"/><text x="104" y="907" class="item-title">甘特图</text><text x="104" y="933" class="item-copy">需求 / 任务进度与人力分配</text>
+    <rect x="352" y="875" width="264" height="86" rx="12" fill="#f3f6ff" stroke="#e2eaff"/><text x="368" y="907" class="item-title">迭代概览</text><text x="368" y="933" class="item-copy">时间范围、进度与完成效率</text>
+    <rect x="88" y="973" width="252" height="86" rx="12" fill="#f3f6ff" stroke="#e2eaff"/><text x="104" y="1005" class="item-title">需求分布统计</text><text x="104" y="1031" class="item-copy">按维度查看需求分布</text>
+    <rect x="352" y="973" width="264" height="86" rx="12" fill="#f3f6ff" stroke="#e2eaff"/><text x="368" y="1005" class="item-title">需求燃烧图</text><text x="368" y="1031" class="item-copy">预测迭代完成进度</text>
+    <rect x="88" y="1071" width="252" height="86" rx="12" fill="#f3f6ff" stroke="#e2eaff"/><text x="104" y="1103" class="item-title">需求累积流图</text><text x="104" y="1129" class="item-copy">查看迭代价值流动效率</text>
+    <rect x="352" y="1071" width="264" height="86" rx="12" fill="#f3f6ff" stroke="#e2eaff"/><text x="368" y="1103" class="item-title">项目需求吞吐量</text><text x="368" y="1129" class="item-copy">比较各项目需求吞吐</text>
+    <rect x="88" y="1201" width="528" height="48" rx="12" fill="#f4f7ff"/><text x="106" y="1231" class="item-copy" fill="#4c69a6">关注：计划是否按节奏持续交付</text>
+  </g>
+
+  <!-- 质量 -->
+  <g>
+    <rect x="672" y="794" width="576" height="480" rx="10" fill="#fff" stroke="#dce4ed"/>
+    <rect x="672" y="794" width="576" height="6" fill="#ba6c77"/>
+    <text x="696" y="847" class="view-title">质量</text><rect x="1158" y="821" width="60" height="28" rx="14" fill="#fff0f1"/><text x="1188" y="840" text-anchor="middle" class="count" fill="#ba6c77">7 项</text>
+    <rect x="696" y="872" width="252" height="70" rx="12" fill="#fff5f6" stroke="#f8e3e6"/><text x="712" y="898" class="item-title">缺陷分布统计</text><text x="712" y="920" class="item-copy">按维度查看缺陷分布</text>
+    <rect x="960" y="872" width="264" height="70" rx="12" fill="#fff5f6" stroke="#f8e3e6"/><text x="976" y="898" class="item-title">缺陷趋势统计</text><text x="976" y="920" class="item-copy">观察处理总数的变化趋势</text>
+    <rect x="696" y="954" width="252" height="70" rx="12" fill="#fff5f6" stroke="#f8e3e6"/><text x="712" y="980" class="item-title">缺陷年龄统计</text><text x="712" y="1002" class="item-copy">各状态停留数量与时长</text>
+    <rect x="960" y="954" width="264" height="70" rx="12" fill="#fff5f6" stroke="#f8e3e6"/><text x="976" y="980" class="item-title">其他缺陷统计</text><text x="976" y="1002" class="item-copy">回归 / 阶段分布、解决率</text>
+    <rect x="696" y="1036" width="252" height="70" rx="12" fill="#fff5f6" stroke="#f8e3e6"/><text x="712" y="1062" class="item-title">项目需求缺陷密度</text><text x="712" y="1084" class="item-copy">对比需求产生的缺陷数</text>
+    <rect x="960" y="1036" width="264" height="70" rx="12" fill="#fff5f6" stroke="#f8e3e6"/><text x="976" y="1062" class="item-title">项目缺陷解决率</text><text x="976" y="1084" class="item-copy">对比项目缺陷解决表现</text>
+    <rect x="696" y="1118" width="252" height="70" rx="12" fill="#fff5f6" stroke="#f8e3e6"/><text x="712" y="1144" class="item-title">项目缺陷回归率</text><text x="712" y="1166" class="item-copy">对比项目缺陷回归表现</text>
+    <rect x="696" y="1201" width="528" height="48" rx="12" fill="#fff6f6"/><text x="714" y="1231" class="item-copy" fill="#a85a63">关注：缺陷变化、分布与解决表现</text>
+  </g>
+
+  <!-- 效率 -->
+  <g>
+    <rect x="1280" y="794" width="576" height="480" rx="10" fill="#fff" stroke="#dce4ed"/>
+    <rect x="1280" y="794" width="576" height="6" fill="#4d907a"/>
+    <text x="1304" y="847" class="view-title">效率</text><rect x="1766" y="821" width="60" height="28" rx="14" fill="#e9f8f2"/><text x="1796" y="840" text-anchor="middle" class="count" fill="#4d907a">3 项</text>
+    <rect x="1304" y="875" width="528" height="82" rx="12" fill="#eef9f5" stroke="#dcefe7"/><text x="1322" y="907" class="item-title">需求时长统计</text><text x="1322" y="933" class="item-copy">比较需求在不同状态下的停留时长</text>
+    <rect x="1304" y="971" width="528" height="82" rx="12" fill="#eef9f5" stroke="#dcefe7"/><text x="1322" y="1003" class="item-title">缺陷年龄统计</text><text x="1322" y="1029" class="item-copy">识别缺陷在各处理状态的耗时</text>
+    <rect x="1304" y="1067" width="528" height="82" rx="12" fill="#eef9f5" stroke="#dcefe7"/><text x="1322" y="1099" class="item-title">项目缺陷解决时长</text><text x="1322" y="1125" class="item-copy">对比不同项目的缺陷解决速度</text>
+    <rect x="1304" y="1201" width="528" height="48" rx="12" fill="#eef9f5"/><text x="1322" y="1231" class="item-copy" fill="#337f69">关注：需求流转与问题解决耗时</text>
+  </g>
+
+  <!-- 跨项目 -->
+  <g>
+    <rect x="64" y="1300" width="1170" height="330" rx="10" fill="#fff" stroke="#dce4ed"/>
+    <rect x="64" y="1300" width="1170" height="6" fill="#8274b8"/>
+    <text x="88" y="1353" class="view-title">跨项目</text><rect x="1138" y="1327" width="60" height="28" rx="14" fill="#f1edff"/><text x="1168" y="1346" text-anchor="middle" class="count" fill="#8274b8">5 项</text>
+    <rect x="88" y="1380" width="352" height="82" rx="13" fill="#f8f6ff"/><text x="108" y="1412" class="item-title">项目需求吞吐量</text><text x="108" y="1437" class="item-copy">比较项目需求交付数量</text>
+    <rect x="454" y="1380" width="352" height="82" rx="13" fill="#f8f6ff"/><text x="474" y="1412" class="item-title">项目需求缺陷密度</text><text x="474" y="1437" class="item-copy">对比需求对应的缺陷数量</text>
+    <rect x="820" y="1380" width="390" height="82" rx="13" fill="#f8f6ff"/><text x="840" y="1412" class="item-title">项目缺陷解决率</text><text x="840" y="1437" class="item-copy">比较各项目的缺陷解决情况</text>
+    <rect x="88" y="1476" width="536" height="82" rx="13" fill="#f8f6ff"/><text x="108" y="1508" class="item-title">项目缺陷解决时长</text><text x="108" y="1533" class="item-copy">比较各项目处理缺陷的速度</text>
+    <rect x="638" y="1476" width="572" height="82" rx="13" fill="#f8f6ff"/><text x="658" y="1508" class="item-title">项目缺陷回归率</text><text x="658" y="1533" class="item-copy">比较各项目缺陷回归表现</text>
+  </g>
+
+  <!-- 团队 -->
+  <g>
+    <rect x="1266" y="1300" width="590" height="330" rx="10" fill="#fff" stroke="#dce4ed"/>
+    <rect x="1266" y="1300" width="590" height="6" fill="#b28a4b"/>
+    <text x="1290" y="1353" class="view-title">团队</text><rect x="1760" y="1327" width="60" height="28" rx="14" fill="#fff5e8"/><text x="1790" y="1346" text-anchor="middle" class="count" fill="#b28a4b">2 项</text>
+    <rect x="1290" y="1380" width="542" height="100" rx="14" fill="#fff9f0"/>
+    <text x="1314" y="1418" class="item-title">团队待办工作统计</text><text x="1314" y="1447" class="item-copy">查看成员待办分布，辅助安排资源</text>
+    <rect x="1290" y="1492" width="542" height="100" rx="14" fill="#fff9f0"/>
+    <text x="1314" y="1530" class="item-title">团队已完成工作统计</text><text x="1314" y="1559" class="item-copy">查看团队一段时间内的完成工作量</text>
+  </g>
+  </g>
+
+  <rect x="64" y="1516" width="1972" height="64" rx="8" fill="#294f77"/>
+  <text x="88" y="1555" class="footer-title" fill="#ffffff">产品关系</text>
+  <text x="256" y="1555" class="footer-copy" fill="#f1f6fb">用户角色选择关注视图</text>
+  <path d="M466 1548h34" stroke="#a9bfd5" stroke-width="2"/><path d="M494 1542l8 6-8 6" fill="none" stroke="#a9bfd5" stroke-width="2"/>
+  <text x="523" y="1555" class="footer-copy" fill="#f1f6fb">专项 / 需求 / 任务 / 缺陷承载工作</text>
+  <path d="M866 1548h34" stroke="#a9bfd5" stroke-width="2"/><path d="M894 1542l8 6-8 6" fill="none" stroke="#a9bfd5" stroke-width="2"/>
+  <text x="923" y="1555" class="footer-copy" fill="#f1f6fb">五类自定义视图呈现进度、质量、效率与团队状态</text>
+</svg>
